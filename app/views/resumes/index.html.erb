@@ -1,0 +1,5 @@
+<h1>Resumes</h1>
+<% @resumes.each do |r| %>
+	<%= r.title %>, <%= r.label %><br>	
+<% end %>
+	<%= link_to "Print", resumes_path(@resumes, :format => 'pdf')%>

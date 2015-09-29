@@ -1,0 +1,4 @@
+<%= @resume.title %>, <%= @resume.label %>
+<p>
+	<%= link_to "Print", resume_path(@resume, :format => 'pdf')%>
+</p>
